@@ -1,9 +1,8 @@
-const app = require('express')();
-const { router } = require('./routes');
+const express = require('express');
+const app = express();
+const path = require('path');
 const { portLogger } = require('./common/logger-middleware');
-const pool = require('./config/pool');
 
-process.pool = pool;
-const port = process.env.PORT || 4000;
-app.use('/', router);
+app.use(express.static(path.join('public')));
+const port = process.env.PORT || 4010;
 app.listen(port, portLogger(port));
