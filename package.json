@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "pm2 start server.js --name masjid-react",
+    "status": "pm2 status",
     "stop": "pm2 stop",
     "lint": "eslint ./",
     "lint-watch": "esw ../express-app -w",
