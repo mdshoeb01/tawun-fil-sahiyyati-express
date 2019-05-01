@@ -4,7 +4,7 @@
   "description": "sample express app to use for projects",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start server.js --name masjid-react",
+    "start": "pm2 start server.js --name health-care-react",
     "status": "pm2 status",
     "stop": "pm2 stop",
     "lint": "eslint ./",
